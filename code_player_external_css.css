@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  padding:0;
+  margin:0;/*No padding between the header and the page edge*/
+}
+
+#header {
+  width:100%;
+  background-color: #EDEDED;
+  padding:5px;/*5px width between edge and the contents inside*/
+  height: 30px;
+}
+
+#logo {
+  float: left;/*All options will come to the left*/
+  font-weight: bold;
+  font-size: 120%;
+  padding: 3px 5px; /*3px top and bottom, 5px left and right*/
+}
+
+#buttonContainer {
+  width:233px;
+  margin: 0 auto;/*To center*/
+}
+
+.toggleButton {
+  float: left;/*All options will come in a line*/
+  border: 1px solid grey;
+  padding: 6px;
+  border-right: none;/*to eliminate double borders. Left border of right container and right border of left container combine to make the border in between the buttons look thick*/
+  font-size: 90%;
+}
+
+#html {
+  border-top-left-radius: 4px;/*For rounded borders of html button*/
+  border-bottom-left-radius: 4px;/*For rounded borders of html button*/
+}
+
+#output {
+  border-right: 1px solid grey;/*Since we applied border-right:none for all .toggleButtons, there would be no right border of Output button*/
+  border-top-right-radius: 4px;/*For rounded borders of output button*/
+  border-bottom-right-radius: 4px;/*For rounded borders of output button*/
+}
+
+.active {
+  background-color: #E8F2FF;
+}
+
+.highlightedButton {
+  background-color: grey;
+}
+
+textarea {
+  width: 50%;
+  resize: none;/*So the person doesnt resize the textarea*/
+  border-top: none;
+  border-color: grey;
+}
+
+.panel {
+  float:left;
+  width:50%;
+  border-left: none;/*So when multiple panels are active then borders wont overlap*/
+}
+
+iframe {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
